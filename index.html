@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Pricing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/pricing.css">
+  <script src="assets/js/pricing.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. 
+        No credit card required. </p>
+    </div>
+    <div class="card">
+      <div class="card-header">
+          <div class="pageviews">
+          <h3 id="pageviewScore">100K PAGEVIEWS</h3>
+        </div>
+        <div class="input-range">
+          <input class="range" type="range" min="10" max="200" step="10" value="100" id="rangeInput">
+        </div>
+        <div class="price">
+          <p id="amount" class="amount"><span id="priceAmountTxt"></span></p>
+          <p class="time">/month</p>
+        </div>
+      </div>
+      <div class="time-options">
+        <label><span>Monthly Billing</span> <input class="switch" type="checkbox" id="yillikOdeme"> <span>Yearly Billing</span></label>
+        <button><p>-25%</p></button>
+      </div>
+      <hr class="footer-line">
+      <div class="footer-section">
+        <div class="footer-items">
+          <div class="footer-item">
+            <img src="assets/img/green-tick.svg" alt="Green Tick">
+            <p>Unlimited websites</p>
+          </div>
+
+          <div class="footer-item">
+            <img src="assets/img/green-tick.svg" alt="Green Tick">
+            <p>100% data ownership </p>
+          </div>
+
+          <div class="footer-item">
+            <img src="assets/img/green-tick.svg" alt="Green Tick">
+            <p>Email reports</p>
+          </div>
+        </div>
+        <button>
+          <a href="#">Start my trial</a>
+        </button>
+      </div>
+  </div>
+
+  </div>
+</body>
+</html>
